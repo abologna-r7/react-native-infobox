@@ -35,6 +35,26 @@ class App extends Component {
 }
 ```
 
+## Simple Usage
+```javascript
+'use strict';
+
+import React, {Component} from 'react'
+import InfoBox from 'react-native-infobox'
+
+class App extends Component {
+	...
+
+	render() {
+		return (
+			<InfoBox>
+				<Text style={{color: 'white'}}>Hello this is a help box.</Text>
+			</InfoBox>
+		)
+	}
+}
+```
+
 ## Props
 Component accepts several self-descriptive properties:
 
