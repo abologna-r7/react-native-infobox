@@ -1,4 +1,4 @@
-## react-native-modal
+## react-native-infobox
 
 An information box component for react-native. This is still very much a work
 in progress and only handles the simplest of cases, ideas and
