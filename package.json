@@ -1,0 +1,31 @@
+{
+  "name": "react-native-infobox",
+  "version": "0.1.0",
+  "description": "An information box for react native",
+  "main": "index.js",
+  "dependencies": {
+    "react-native-vector-icons": ">= 2.1.0"
+  },
+  "peerDependencies": {
+    "react-native": ">= 0.35.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abologna-r7/react-native-infobox.git"
+  },
+  "keywords": [
+    "react",
+    "native",
+    "information",
+    "box"
+  ],
+  "author": "Antonio Bologna <antonio.bologna@gmail.com> (https://www.github.com/abologna-r7)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/abologna-r7/react-native-infobox/issues"
+  },
+  "homepage": "https://github.com/abologna-r7/react-native-infobox#readme"
+}
