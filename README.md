@@ -4,6 +4,7 @@ An information box component for react-native. This is still very much a work
 in progress and only handles the simplest of cases, ideas and
 contributions are very welcome.
 
+![Screenshot](https://github.com/abologna-r7/react-native-infobox/blob/master/screenshot.png?raw=true)
 
 ## Add it to your project
 1. Run `npm install react-native-infobox --save`
