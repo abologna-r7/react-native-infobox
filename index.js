@@ -1,9 +1,8 @@
 import React, { Component, PropTypes } from 'react'
-import { InfoBoxStyle } from 'style'
+import { InfoBoxStyle } from '../styles'
 import Icon from 'react-native-vector-icons/Ionicons'
 
 import {
-  Text,
 	TouchableWithoutFeedback,
   View
 } from 'react-native'
@@ -21,6 +20,7 @@ export default class InfoBox extends Component {
 		iconName: PropTypes.string,
 		iconColor: PropTypes.string,
 		iconSize: PropTypes.number,
+    type: PropTypes.string,
 	}
 
 	static defaultProps = {
@@ -31,6 +31,7 @@ export default class InfoBox extends Component {
 		iconName: 'ios-close',
 		iconColor: '#FFFFFF',
 		iconSize: 30,
+    type: 'info',
 	}
 
   constructor(props) {
@@ -50,10 +51,24 @@ export default class InfoBox extends Component {
 		this.props.onClose()
 	}
 
+  getType() {
+    switch (this.props.type) {
+      case 'error':
+        return InfoBoxStyle.error
+      case 'warning':
+        return InfoBoxStyle.warning
+      case 'info':
+      default:
+        return InfoBoxStyle.info
+
+
+    }
+  }
+
   render() {
 		if(!this.state.hidden) {
 			return (
-				<View style={[InfoBoxStyle.container, this.props.containerStyle]}>
+				<View style={[InfoBoxStyle.container, this.getType(), this.props.containerStyle]}>
 					<TouchableWithoutFeedback onPress={this.onClose}>
 						<Icon
 							name={this.props.iconName}
